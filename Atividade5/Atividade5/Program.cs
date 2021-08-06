@@ -10,45 +10,54 @@ namespace Atividade5
     {
         static void Main(string[] args)
         {
-            string texto = "\n ---------------------------------------------------";
+            string texto = "------------------------------------------------";
 
-            Console.WriteLine("Digite quantos alunos tem a escola:");
-            var qtdAlunos = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine(texto);
+            Console.Write("Digite quantos alunos tem a escola:  ");
+            var qtdAlunos = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("\n");
 
             for (int i = 1; i <= qtdAlunos; i++)
             {
-                Console.WriteLine($"Digite os dados do {i}º aluno:");
-                Console.WriteLine("Nome:");
-                var nomeAluno = Console.ReadLine();
-                Console.WriteLine("Matricula:");
-                var matricula = Console.ReadLine();
-                Console.WriteLine("Primeira nota:");
-
-                double nota1 = Convert.ToDouble(Console.ReadLine());
-                Console.WriteLine("Segunda nota:");
-                double nota2 = Convert.ToDouble(Console.ReadLine());
-                Console.WriteLine("Terceira nota:");
-                double nota3 = Convert.ToDouble(Console.ReadLine());
                 Console.WriteLine(texto);
+                Console.WriteLine($"----------Digite os dados do {i}º aluno:----------");
+                Console.WriteLine(texto);
+                Console.Write("Nome:    ");
+                var nomeAluno = Console.ReadLine();
+                //Console.Write("Matricula:");
+                // var matricula = Console.ReadLine();
 
+                Console.Write("Nota 1:  ");
+                double nota1 = Convert.ToDouble(Console.ReadLine());
+                Console.Write("Nota 2:  ");
+                double nota2 = Convert.ToDouble(Console.ReadLine());
+                Console.Write("Nota 3:  ");
+                double nota3 = Convert.ToDouble(Console.ReadLine());
 
-               List<dynamic> dadosAlunos = new List<dynamic>();
-                dadosAlunos.Add(new {
-                    nome = nomeAluno[i],
-                    mat = matricula[i],
-                    priNota = nota1,
-                    segNota = nota2,
-                    terNota = nota3,                    
-            });
-                Console.WriteLine(dadosAlunos[i].nome);
+                var media = (nota1 + nota2 + nota3) / 3;
+                string situacao = (media >= 5 ? "Situação: Aprovado (a)" : "Situação: Não Aprovado (a)");
+
+                List<dynamic> dadosAlunos = new List<dynamic>();
+                dadosAlunos.Add(new
+                {
+                    nomeAluno,
+                    nota1,
+                    nota2,
+                    nota3,
+                    media,
+                    situacao
+                });
+
+                foreach (dynamic v in dadosAlunos)
+                {
+                    Console.WriteLine("-------------------Resultados-------------------");
+                    Console.WriteLine($"Nome    : {nomeAluno}");
+                    Console.WriteLine($"Notas   : {nota1} + {nota2} + {nota3}");
+                     Console.WriteLine($"Média   : {media}");
+                    Console.WriteLine(situacao);
+                    Console.WriteLine(texto + "\n\n\n");
+                }
             }
-
-        //    for (int i = 1; i <= qtdAlunos; i++)
-        //    {
-        //        Console.WriteLine(dadosAlunos[i].nome);               
-        //    }
-
 
             Console.ReadKey();
 
