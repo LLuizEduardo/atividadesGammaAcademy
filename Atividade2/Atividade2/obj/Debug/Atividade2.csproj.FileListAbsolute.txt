@@ -1,0 +1,7 @@
+C:\Users\Luiz Eduardo\source\repos\Atividade2\Atividade2\obj\Debug\Atividade2.csproj.AssemblyReference.cache
+C:\Users\Luiz Eduardo\source\repos\Atividade2\Atividade2\obj\Debug\Atividade2.csproj.CoreCompileInputs.cache
+C:\Users\Luiz Eduardo\source\repos\Atividade2\Atividade2\bin\Debug\Atividade2.exe.config
+C:\Users\Luiz Eduardo\source\repos\Atividade2\Atividade2\bin\Debug\Atividade2.exe
+C:\Users\Luiz Eduardo\source\repos\Atividade2\Atividade2\bin\Debug\Atividade2.pdb
+C:\Users\Luiz Eduardo\source\repos\Atividade2\Atividade2\obj\Debug\Atividade2.exe
+C:\Users\Luiz Eduardo\source\repos\Atividade2\Atividade2\obj\Debug\Atividade2.pdb

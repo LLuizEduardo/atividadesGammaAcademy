@@ -1,0 +1,7 @@
+C:\Users\Luiz Eduardo\source\repos\AtividadeAula1\AtividadeAula1\bin\Debug\AtividadeAula1.exe.config
+C:\Users\Luiz Eduardo\source\repos\AtividadeAula1\AtividadeAula1\bin\Debug\AtividadeAula1.exe
+C:\Users\Luiz Eduardo\source\repos\AtividadeAula1\AtividadeAula1\bin\Debug\AtividadeAula1.pdb
+C:\Users\Luiz Eduardo\source\repos\AtividadeAula1\AtividadeAula1\obj\Debug\AtividadeAula1.csproj.AssemblyReference.cache
+C:\Users\Luiz Eduardo\source\repos\AtividadeAula1\AtividadeAula1\obj\Debug\AtividadeAula1.csproj.CoreCompileInputs.cache
+C:\Users\Luiz Eduardo\source\repos\AtividadeAula1\AtividadeAula1\obj\Debug\AtividadeAula1.exe
+C:\Users\Luiz Eduardo\source\repos\AtividadeAula1\AtividadeAula1\obj\Debug\AtividadeAula1.pdb
