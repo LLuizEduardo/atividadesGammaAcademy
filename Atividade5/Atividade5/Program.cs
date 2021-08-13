@@ -35,24 +35,24 @@ namespace Atividade5
                 double nota3 = Convert.ToDouble(Console.ReadLine());
 
                 var media = (nota1 + nota2 + nota3) / 3;
-                string situacao = (media >= 5 ? "Situação: Aprovado (a)" : "Situação: Não Aprovado (a)");
+                string situacao = (media >= 7 ? "Situação: Aprovado (a)" : "Situação: Não Aprovado (a)");
 
                 List<dynamic> dadosAlunos = new List<dynamic>();
                 dadosAlunos.Add(new
                 {
-                    nomeAluno,
-                    nota1,
-                    nota2,
-                    nota3,
-                    media,
-                    situacao
+                    Nome = nomeAluno,
+                    Notas = new List<double>(){nota1, nota2, nota3},
+                    Media = media,
+                    Situacao = situacao
+
+                    /*nomeAluno, nota1, nota2, nota3, media, situacao*/
                 });
 
                 foreach (dynamic v in dadosAlunos)
                 {
                     Console.WriteLine("-------------------Resultados-------------------");
                     Console.WriteLine($"Nome    : {nomeAluno}");
-                    Console.WriteLine($"Notas   : {nota1} + {nota2} + {nota3}");
+                    Console.WriteLine($"Notas   : {nota1}, {nota2}, {nota3}");
                      Console.WriteLine($"Média   : {media}");
                     Console.WriteLine(situacao);
                     Console.WriteLine(texto + "\n\n\n");
@@ -60,7 +60,6 @@ namespace Atividade5
             }
 
             Console.ReadKey();
-
         }
     }
 }
